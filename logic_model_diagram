@@ -1,0 +1,26 @@
+digraph {
+	margin="0.1, 0.1" rankdir=LR size="10,5"
+	Mission [label="PURPOSE or MISSION
+of your program, effort, or initiative" color=lightblue shape=box style="rounded,filled"]
+	Inputs [label="INPUTS or RESOURCES:
+Raw materials, constraints,
+barriers to objectives" color=lightgreen shape=box style="rounded,filled"]
+	Activities [label="ACTIVITIES:
+What the program does
+with the resources" color=yellow shape=box style="rounded,filled"]
+	Outputs [label="OUTPUTS:
+Direct evidence of
+having performed the activities" color=orange shape=box style="rounded,filled"]
+	Effects [label="EFFECTS or RESULTS:
+Consequences, outcomes, or impacts
+(short-term, mid-term, long-term)" color=lightpink shape=box style="rounded,filled"]
+	Context [label="CONTEXT or CONDITIONS
+of your work" color=lightgray shape=box style="rounded,filled"]
+	Mission -> Inputs
+	Inputs -> Activities
+	Activities -> Outputs
+	Outputs -> Effects
+	Mission -> Effects
+	Context -> Inputs
+	Context -> Effects
+}
